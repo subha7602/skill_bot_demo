@@ -1,0 +1,164 @@
+[
+  {
+    "id": "de29623f-1b74-4dde-bfef-b25912a851ae",
+    "query": "hi",
+    "response": "Hello! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T11:48:01.455370",
+    "enhanced_model": true,
+    "recorded_at": "2025-05-04T11:48:01.455383"
+  },
+  {
+    "id": "141578ec-5a4f-4511-9b25-dfde391d592d",
+    "query": "hi",
+    "response": "Hello! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "negative",
+    "timestamp": "2025-05-04T11:54:15.384003",
+    "enhanced_model": true,
+    "recorded_at": "2025-05-04T11:54:15.384017"
+  },
+  {
+    "id": "573678d4-66c0-465d-8a20-a0eee339a05d",
+    "query": "good morning",
+    "response": "Good morning! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "negative",
+    "timestamp": "2025-05-04T12:28:46.124145",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T12:28:46.124196"
+  },
+  {
+    "id": "bd84963b-95b0-4cb1-8e7a-96b762ad75c1",
+    "query": "hello",
+    "response": "Hello there! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "negative",
+    "timestamp": "2025-05-04T12:29:09.937311",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T12:29:09.937360"
+  },
+  {
+    "id": "9c378c20-1538-4d08-b45a-86094eb50eb7",
+    "query": "ohayou gozaimasu",
+    "response": "Good morning! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T12:29:25.791204",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T12:29:25.791248"
+  },
+  {
+    "id": "a2b10d59-59e0-4ce0-ae68-00e122299424",
+    "query": "mridu",
+    "response": "I'm sorry, this question is out of my scope. Please try asking about resumes, candidates, skills, certifications, or projects to help you find the right talent.",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T12:29:43.165734",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T12:29:43.165778"
+  },
+  {
+    "id": "b75903c2-16d6-4fda-8d70-afb9b51c6b51",
+    "query": "i need help",
+    "response": "I'm happy to assist you. How can I help you today?\nHow can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T13:07:55.930724",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T13:07:55.930751"
+  },
+  {
+    "id": "24a6f03b-5229-483c-9533-25dfef3d3006",
+    "query": "hi",
+    "response": "Hello there! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T13:11:00.267483",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T13:11:00.267512"
+  },
+  {
+    "id": "ba3947b4-ba0f-4034-9746-318368a27ea5",
+    "query": "hi",
+    "response": "Hello! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T13:11:24.739406",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T13:11:24.739432"
+  },
+  {
+    "id": "adc9a95d-f75c-47ab-b442-2602d2a5070e",
+    "query": "hi",
+    "response": "Hello! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T13:13:05.821440",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T13:13:05.821686"
+  },
+  {
+    "id": "f7fe358c-7dec-4547-bb81-d545502a6ed1",
+    "query": "hi",
+    "response": "Hello! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T13:17:37.810061",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T13:17:37.810182"
+  },
+  {
+    "id": "6679531f-85ec-499c-b741-15d7d09174d7",
+    "query": "hi",
+    "response": "Hello! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T13:19:42.827450",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T13:19:42.827531"
+  },
+  {
+    "id": "5a80c353-0237-40f1-91e7-037a9458afd6",
+    "query": "hi",
+    "response": "Hello! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T13:36:54.265869",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T13:36:54.266087"
+  },
+  {
+    "id": "d0fa841e-63c8-4a21-b31e-f3d48a7df8c0",
+    "query": "hello",
+    "response": "Hello there! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "negative",
+    "timestamp": "2025-05-04T13:37:18.731780",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T13:37:18.731859"
+  },
+  {
+    "id": "d141cd03-6f3b-400a-b857-a8f90fbdd434",
+    "query": "list the skills of Priyadharsini MV",
+    "response": "Here are the candidates with list the skills of Priyadharsini MV:\n- MySQL\n- Java\n- Java SE\n- Angular\n- Android Studio\n- AWS Lex\n- AWS DMS\n- AWS SES\n- AWS Step Functions\n- Azure Blob Storage\n- HashiCorp Terraform\n- AWS Elastic Disaster Recovery\n- AWS Elastic Container Registry\n- AWS Organizations\n- AWS Application Migration Service\n- AWS CloudWatch Logs\n- AWS CloudWatch\n- AWS Chatbot\n- AWS EventBridge\n- Azure Virtual Machines\n- Azure Active Directory (AAD)\n- AWS IAM\n- AWS CloudTrail\n- AWS Trusted Advisor\n- AWS DynamoDB\n- AWS EC2\n- AWS Lambda\n- Jenkins\n- AWS Migration Hub\n- AWS Database Migration Service\n- AWS Application Discovery Service\n- AWS Control Tower\n- AWS MGN\n- AWS DRS\n- AWS RDS\n- AWS S3\n- AWS Transit Gateway\n- Gitlab\n- Github\n- AWS CodeCommit\n- AWS CodeBuild\n- AWS CodePipeline\n- AWS CloudFormation\n- Docker\n- Azure Vnet\n- Unfortunately, there is no candidate named Priyadharsini MV in the provided resume information. The resumes provided are for a different candidate named Amu Th Ava Rsn I Ra J Kumar.\n\nWhat specific technical requirements are most important for this role?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T14:10:37.079069",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T14:10:37.079152"
+  },
+  {
+    "id": "cc3debd4-5a63-4975-806a-04aa0637c82c",
+    "query": "hi",
+    "response": "Hello there! How can I assist you in retrieving the company-wide information you're looking for?",
+    "feedback": "negative",
+    "timestamp": "2025-05-04T17:35:55.219948",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T17:35:55.220042"
+  },
+  {
+    "id": "e121856f-3475-4f38-aee1-f4a70822c6eb",
+    "query": "please help me",
+    "response": "I'm happy to assist you. How can I help you retrieve the company-wide information you're looking for?",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T18:06:17.984736",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T18:06:17.984824"
+  },
+  {
+    "id": "e6ee1954-09f5-4f3a-aadd-76aaf2c7878f",
+    "query": "can you compare raghavendhiran and amuthavarsni for a figma project",
+    "response": "# Comparison: Raghavendiran N vs. Amuthavarsni Rajkumar\nProject Types: figma\n\n## Project Experience\n\n| Metric | Raghavendiran N | Amuthavarsni Rajkumar |\n| --- | --- | --- |\n| Total Projects | 3 | 3 |\n| Figma Projects | 0 | 0 |\n| Avg Project Duration | 0.0 months | 0.0 months |\n\n## Project Roles\n\n| Role | Raghavendiran N | Amuthavarsni Rajkumar |\n| --- | --- | --- |\n| Associate Engineer | \u2713 | \u2717 |\n| Cloud Engineer | \u2717 | \u2713 |\n| DevOps Engineer | \u2717 | \u2713 |\n\n## Unique Projects\n\n| Person | Unique Projects |\n| --- | --- |\n| Raghavendiran N | Infrastructure Design and Automation, Generic APIValidator, AWS Infrastructure Development |\n| Amuthavarsni Rajkumar | Health and Longevity Infrastructure Setup and CI-CD Automation, E-Banking Migration, Global Background Checks and Screening Infrastructure Management and CI-CD Support |\n\n## Technologies & Tools\n\n| Technology | Raghavendiran N | Amuthavarsni Rajkumar |\n| --- | --- | --- |\n| Aws | \u2713 | \u2713 |\n| Cloud | \u2717 | \u2713 |\n| Cloudformation | \u2717 | \u2713 |\n| Docker | \u2713 | \u2717 |\n| Ec2 | \u2713 | \u2717 |\n| Github | \u2713 | \u2717 |\n| Lambda | \u2713 | \u2713 |\n| Mysql | \u2713 | \u2717 |\n| Rds | \u2713 | \u2717 |\n| S3 | \u2713 | \u2717 |\n| Sql | \u2713 | \u2717 |\n| Terraform | \u2713 | \u2717 |\n\n## Common Skills\n\nSkills shared by all compared individuals:\ninfrastructure, aws, lambda\n\n## Candidate Ranking\n\n| Rank | Person | Overall Score | Key Strengths |\n| --- | --- | --- | --- |\n| 1 | Raghavendiran N | 18% | 3 projects |\n| 2 | Amuthavarsni Rajkumar | 18% | 3 projects |\n\n### Ranking Criteria Breakdown\n\n| Person | Project Experience |\n| --- | --- |\n| Raghavendiran N | 18% |\n| Amuthavarsni Rajkumar | 18% |\n\n## Recommendations\n\n- **Overall best match:** Raghavendiran N (Score: 18%)\n- **Best for Project Experience:** Raghavendiran N (Score: 18%)",
+    "feedback": "positive",
+    "timestamp": "2025-05-04T22:23:28.846526",
+    "enhanced_model": false,
+    "recorded_at": "2025-05-04T22:23:28.846622"
+  }
+]

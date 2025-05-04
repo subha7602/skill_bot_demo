@@ -1,0 +1,264 @@
+# Skills Bot: Smart Resume Query Engine Using RAG and Contextual Retrieval for Precise Skills Identification
+
+## Overview
+
+Skills Bot is an advanced AI-powered talent management system that uses vector embeddings, Large Language Models, and sophisticated string similarity algorithms to intelligently match talent with projects based on skills, experience, and project requirements.
+
+## Problem Solved
+
+Organizations struggle to efficiently match talent to projects because traditional keyword-based systems cannot process the nuances in resumes and project requirements. This leads to hidden talent, mismatched skills, overlooked expertise, and time-consuming candidate comparisons—resulting in suboptimal teams, extended timelines, increased costs, and underutilized internal talent.
+
+## Key Features
+
+- **Contextual Project Retrieval**: Search for projects and people using natural language queries
+- **Vector-Based Similarity Search**: Find semantically similar content using FAISS
+- **Skill-Based Candidate Matching**: Identify candidates with specific skills or technologies
+- **Multi-Person Comparison**: Compare up to 4 candidates side-by-side with tabular output
+- **Resume and Project Data Storage**: Store structured resume and project data in vector databases
+- **Natural Language Query Processing**: Interpret complex queries about employees and projects
+- **LLM-Enhanced Results**: Use LLMs to improve search relevance and result presentation
+
+## Tech Stack
+
+- **Backend**: Python with LangChain framework
+- **Vector Database**: FAISS (Facebook AI Similarity Search)
+- **LLM Integration**: AWS Bedrock (Claude Haiku)
+- **Embeddings**: AWS Bedrock Titan Embeddings
+- **String Matching**: Custom StringSimilarity implementation
+- **Frontend**: Streamlit
+- **Retry Mechanism**: Tenacity library
+
+## Installation and Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/skills-bot.git
+cd skills-bot
+
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## Data Processing Pipeline
+
+Run the following scripts in sequence to prepare the system:
+
+### 1. Resume Parsing
+```bash
+# Transform raw resume documents into structured, semantic chunks
+# This script:
+# - Handles multiple resume formats (PDF, DOCX, JSON)
+# - Extracts core skills and technologies with version detection
+# - Identifies project experience with duration calculation
+# - Performs education and certification verification
+# - Creates normalized skill taxonomy mappings
+# - Outputs JSON-structured data ready for embedding
+python backend/resume_parser.py 
+```
+
+### 2. Vector Store Creation
+```bash
+# Generate optimized embedding vectors for all resume components
+# This script:
+# - Creates dense vector representations of skills, projects, and responsibilities
+# - Builds efficient FAISS index with 768-dimensional vectors
+# - Implements hierarchical clustering for faster retrieval
+# - Saves metadata mapping for post-retrieval enhancement
+# - Performs quality validation with test queries
+python backend/vector_store.py
+```
+
+### 3. LLM Integration Setup
+```bash
+# Configure the AWS Bedrock integration
+# This script:
+# - Validates AWS credentials and region settings
+# - Tests connectivity to selected LLM endpoints
+# - Configures rate limiting and retry mechanisms
+# - Establishes embedding consistency verification
+# - Sets up prompt templates for different query types
+# - Creates fallback mechanisms for API interruptions
+python backend/llm_integration.py 
+```
+
+### 4. AWS Configuration
+```bash
+# Set required environment variables:
+export AWS_ACCESS_KEY_ID=your_access_key
+export AWS_SECRET_ACCESS_KEY=your_secret_key
+export AWS_REGION=your_aws_region
+
+# Or use AWS CLI for configuration:
+aws configure
+```
+
+### 5. Application Launch
+```bash
+# Start the Streamlit interface :
+streamlit run app.py 
+```
+
+## Requirements
+
+See [requirements.txt](requirements.txt) for the full list of dependencies.
+
+## Architecture Components
+
+### 1. Vector Database (FAISS)
+
+Provides high-performance similarity search across thousands of resumes with sub-second response times. FAISS maintains semantic relationships between documents while scaling efficiently with growing organizations.
+
+Key capabilities:
+- Multi-dimensional indexing with IVF (Inverted File) structure
+- Product quantization for memory-efficient storage
+- GPU acceleration support for large-scale operations
+- Hybrid distance metrics combining L2 and cosine similarity
+
+### 2. AWS Bedrock Integration
+
+Offers secure access to advanced AI models without specialized infrastructure. The system uses `amazon.titan-embed-text-v1` for embedding generation and `anthropic.claude-3-haiku-20240307-v1:0` for advanced text processing.
+
+Implementation details:
+- Request throttling with exponential backoff
+- Response validation with error handling
+- Token usage optimization and tracking
+- Model parameter tuning for specific query types
+
+### 3. StringSimilarity Class
+
+A custom component that complements vector similarity with specialized algorithms for name matching and technical terminology, addressing terminology variations across departments and industries.
+
+Features:
+- Levenshtein distance for fuzzy name matching
+- N-gram comparison for technical term variations
+- Weighted token set ratio for multi-word phrases
+- Contextual term expansion (e.g., "ML" → "Machine Learning")
+
+### 4. ContextualProjectRetrieval
+
+The core orchestration component that intelligently processes natural language queries through:
+
+- **Intent Classification**: Automatically determines if the query relates to skills, projects, comparison requests, or hybrid inquiries
+- **Query Enhancement**: Enriches raw queries with relevant technical context and synonyms
+- **Semantic Decomposition**: Breaks complex queries into sub-queries for targeted retrieval
+- **Multi-step Retrieval Strategy**: Coordinates appropriate vector and string-based search methods based on query intent
+- **Context Window Management**: Optimizes context inclusion to maintain relevance while fitting model constraints
+- **Result Refinement**: Post-processes raw search results to improve relevance and presentation quality
+- **Confidence Scoring**: Assigns reliability ratings to matches based on multiple similarity metrics
+- **Dynamic Re-ranking**: Adjusts result ordering based on contextual relevance to the original query
+- **Hybrid Retrieval Techniques**: Combines dense and sparse retrieval methods for optimal results
+
+This sophisticated approach eliminates the need for complex Boolean queries, allowing users to interact with the system using natural conversational language. The contextual understanding enables the system to identify not just exact skill matches but also related competencies and technologies.
+
+### 5. Streamlit Frontend
+
+Enables rapid development of data-centric applications with minimal code, making complex talent comparison data accessible to non-technical users.
+
+Interface features:
+- Responsive layout with mobile optimization
+- Interactive data visualizations for skill comparisons
+- One-click PDF resume generation
+- Search history and saved queries
+- Team composition optimization tools
+
+## Usage Examples
+
+### Natural Language Queries
+
+```python
+# Find people with specific skills
+results = retrieval_system.query_resumes("Who has experience with AWS and machine learning?")
+
+# Find projects related to specific technologies
+results = retrieval_system.query_projects("Show me projects using React and Node.js")
+
+# Compare multiple candidates
+results = retrieval_system.handle_comparison_query(
+    "Compare John Smith, Jane Doe, and Michael Johnson for a cloud architecture project"
+)
+
+# Complex contextual queries
+results = retrieval_system.contextual_query(
+    "Find me someone with healthcare experience who knows Python and has worked on data privacy projects"
+)
+
+# Team composition optimization
+optimal_team = retrieval_system.optimize_team_composition(
+    "Build a 5-person team for a machine learning project in the finance sector"
+)
+```
+
+### Streamlit Interface
+
+The system includes a Streamlit interface for easy querying:
+
+```python
+import streamlit as st
+from skills_bot import ContextualProjectRetrieval
+
+st.title("Skills Bot: AI-Powered Resume and Project Matching")
+
+query = st.text_input("Enter your query:")
+if st.button("Search"):
+    retrieval_system = ContextualProjectRetrieval()
+    results = retrieval_system.query_resumes_improved(query)
+    st.markdown(results)
+    
+    # Display confidence scores
+    st.subheader("Match Confidence")
+    st.bar_chart(retrieval_system.get_confidence_scores())
+    
+    # Show related skills
+    st.subheader("Related Skills")
+    st.write(retrieval_system.get_related_skills())
+```
+
+## Data Structure
+
+### Resume Format
+
+```json
+{
+  "name": "John Doe",
+  "skills": ["Python", "AWS", "Machine Learning", "Kubernetes"],
+  "projects": [
+    {
+      "project_name": "CRM System Migration",
+      "project_role": "Lead Engineer",
+      "period": "January 2022 to December 2022",
+      "responsibilities": "Architected and led migration of legacy CRM to cloud",
+      "technologies": "AWS, Python, Terraform, Docker"
+    }
+  ],
+  "certifications": ["AWS Solutions Architect", "Kubernetes Administrator"]
+}
+```
+
+## Performance Optimization
+
+- **Embedding Caching**: Uses `lru_cache` to reduce duplicate embedding generation
+- **Batched Processing**: Processes large datasets in batches to manage memory
+- **Pre-filtering**: Applies metadata-based filtering before vector comparisons
+- **Context Chunking**: Divides large documents for better semantic representation
+- **Asynchronous Processing**: Implements async/await patterns for parallel operations
+- **Progressive Result Loading**: Returns initial results quickly while refining in background
+- **Query Profiling**: Tracks and optimizes slow-running queries automatically
+- **Vector Quantization**: Reduces memory footprint for large resume collections
+- **Disk-based Indexing**: Supports larger-than-RAM datasets with efficient paging
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add some amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+## Author
+   Subhashini S V
+## Date:
+   May 2, 2025

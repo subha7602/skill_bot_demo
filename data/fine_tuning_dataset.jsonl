@@ -1,0 +1,3 @@
+{"messages": [{"role": "user", "content": "hi"}, {"role": "assistant", "content": "Hello! How can I assist you in retrieving the company-wide information you're looking for?"}]}
+{"messages": [{"role": "user", "content": "ohayou gozaimasu"}, {"role": "assistant", "content": "Good morning! How can I assist you in retrieving the company-wide information you're looking for?"}]}
+{"messages": [{"role": "user", "content": "mridu"}, {"role": "assistant", "content": "I'm sorry, this question is out of my scope. Please try asking about resumes, candidates, skills, certifications, or projects to help you find the right talent."}]}

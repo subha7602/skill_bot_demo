@@ -1,0 +1,31 @@
+# Core dependencies
+boto3>=1.28.0
+numpy>=1.24.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+uuid>=1.30.0
+streamlit>=1.24.0
+pyperclip>=1.8.2
+tenacity>=8.2.0
+
+# LangChain packages
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.0.10
+langchain-openai>=0.0.5
+langchain-aws>=0.1.0
+
+# Vector stores
+faiss-cpu>=1.7.4
+
+# PDF processing
+PyMuPDF>=1.22.0
+PyPDF2>=3.0.0
+
+
+#Fuzzy name matching
+thefuzz
+python-Levenshtein
+
+
+pymongo
