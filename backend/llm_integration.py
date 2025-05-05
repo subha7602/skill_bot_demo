@@ -279,7 +279,8 @@ class ContextualProjectRetrieval:
             aws_region: AWS region for Bedrock services
         """
         # Load environment variables
-        load_dotenv()
+        self.load_env_from_path("/etc/secrets/env")
+    
         
         # Set AWS region (use environment or passed value)
         self.aws_region = aws_region or os.getenv('AWS_REGION', 'us-east-1')
@@ -318,6 +319,33 @@ class ContextualProjectRetrieval:
     # Initialize name matching functionality
         self.initialize_name_matching()
     
+    def load_env_from_path(self, env_file_path):
+        """
+        Load environment variables from specified file path.
+        
+        Args:
+            env_file_path: Path to the environment file
+        """
+        try:
+            if not os.path.exists(env_file_path):
+                print(f"Warning: Environment file not found at {env_file_path}")
+                return
+                
+            with open(env_file_path, 'r') as file:
+                for line in file:
+                    line = line.strip()
+                    # Skip empty lines and comments
+                    if not line or line.startswith('#'):
+                        continue
+                        
+                    # Parse key-value pairs
+                    key, value = line.split('=', 1)
+                    os.environ[key.strip()] = value.strip().strip('"\'')
+                    
+            print(f"Loaded environment variables from {env_file_path}")
+        except Exception as e:
+            print(f"Error loading environment variables: {e}")
+
     @retry(wait=wait_exponential(min=1, max=60), stop=stop_after_attempt(5))
     def get_embedding_with_retry(self, text):
         """Get embeddings with retry logic for rate limits"""
