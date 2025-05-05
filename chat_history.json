@@ -786,5 +786,21 @@
         "74c4e9c6-54d3-402e-be68-96a60380e25c"
       ]
     ]
+  ],
+  "71ab1052-c8fd-4c05-a823-b6d72b3ec429": [
+    [
+      [
+        "You",
+        "hi"
+      ],
+      [
+        "AI",
+        "Hello! How can I assist you in retrieving the company-wide information you're looking for?"
+      ],
+      [
+        "id",
+        "96ac27a0-d54d-49f0-bbd9-3c46a4770acb"
+      ]
+    ]
   ]
 }
