@@ -403,21 +403,7 @@
       ]
     ]
   ],
-  "20250320142153": [
-    [
-      [
-        "You",
-        "can you list the projects of amudhavarsni r"
-      ],
-      [
-        "AI",
-        "I apologize, but I don't have any specific information about projects that Amuthavarsni Rajkumar (assuming this is the person you're referring to as \"Amudhavarsni R\") has worked on. The resume information provided doesn't list individual projects for any of the candidates.\n\nHowever, based on Amuthavarsni Rajkumar's skills and experience, we can infer that she has likely worked on projects involving:"
-      ],
-      [
-        "id",
-        "987aa054-d981-4696-8fc5-91ca3616248c"
-      ]
-    ],
+ 
     [
       [
         "You",
@@ -477,21 +463,8 @@
         "id",
         "811e4cac-9526-4e94-a62a-9f5f6f444a71"
       ]
-    ],
-    [
-      [
-        "You",
-        "can you tell about projects of amuthavarsni"
-      ],
-      [
-        "AI",
-        "No detailed project information found for: can you tell about s of amuthavarsni"
-      ],
-      [
-        "id",
-        "3a921363-a4b7-4076-9de3-15cf37663eda"
-      ]
     ]
+
   ],
   "20250416155239": [
     [
@@ -587,22 +560,7 @@
       ]
     ]
   ],
-  "20250429133230": [
-    [
-      [
-        "You",
-        "can you compare who completed sysops certification in aws"
-      ],
-      [
-        "AI",
-        "Please specify at least two people to compare. You can mention their names directly in your query."
-      ],
-      [
-        "id",
-        "1f355de8-b6c1-4932-8cfa-92228f98298c"
-      ]
-    ]
-  ],
+
   "f460f460-aa49-4a2d-ad0e-0d4e56ce6613": [
     [
       [
@@ -663,22 +621,7 @@
       ]
     ]
   ],
-  "dce81e9f-e27b-4493-acaa-da1da65e675e": [
-    [
-      [
-        "You",
-        "can you compare amutha varshini and priyadharshini for a project in aws"
-      ],
-      [
-        "AI",
-        "Please specify at least two people to compare. You can mention their names directly in your query."
-      ],
-      [
-        "id",
-        "6dda7ed8-f96c-462f-8b02-fc2e61e45740"
-      ]
-    ]
-  ],
+
   "057c848a-3cc6-4808-9815-5aaf36857c51": [
     [
       [
@@ -708,37 +651,9 @@
         "408435d4-bbef-4668-bd01-ee6ade78b5bd"
       ]
     ],
-    [
-      [
-        "You",
-        "can you compare amuthavarsni rajkumar and allen lewis for a project in java"
-      ],
-      [
-        "AI",
-        "An error occurred while comparing people. Please try again with specific names. Error details: object of type 'NoneType' has no len()"
-      ],
-      [
-        "id",
-        "a01933bd-29ea-44eb-b2db-67d747bd330c"
-      ]
-    ]
+   
   ],
-  "c0d91c94-ba02-4235-9f5e-381b0f631971": [
-    [
-      [
-        "You",
-        "hi"
-      ],
-      [
-        "AI",
-        "Hello! How can I assist you in retrieving the company-wide information you're looking for?"
-      ],
-      [
-        "id",
-        "7caa0e8a-68db-40bf-97ad-2b5068cece9f"
-      ]
-    ]
-  ],
+
   "7004c917-c1e0-4fa7-958d-c0d1a7f2f621": [
     [
       [
@@ -755,38 +670,8 @@
       ]
     ]
   ],
-  "9c4424da-6940-4fa1-9b03-185e0efcad3b": [
-    [
-      [
-        "You",
-        "hello"
-      ],
-      [
-        "AI",
-        "An error occurred while processing your query. Please try again later. Error details: RetryError[<Future at 0x10cc836e0 state=finished raised AccessDeniedException>]"
-      ],
-      [
-        "id",
-        "c7e9c70e-a7b5-42f4-a901-b045fe1d8997"
-      ]
-    ]
-  ],
-  "66f86eaf-f69e-456c-9338-655b5e692185": [
-    [
-      [
-        "You",
-        "hello"
-      ],
-      [
-        "AI",
-        "An error occurred while processing your query. Please try again later. Error details: RetryError[<Future at 0x112d7e630 state=finished raised AccessDeniedException>]"
-      ],
-      [
-        "id",
-        "74c4e9c6-54d3-402e-be68-96a60380e25c"
-      ]
-    ]
-  ],
+
+
   "71ab1052-c8fd-4c05-a823-b6d72b3ec429": [
     [
       [
